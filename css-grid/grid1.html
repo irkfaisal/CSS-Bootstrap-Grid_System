@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            /* grid-column-gap: 1rem;
+            grid-row-gap: 1rem; */
+            grid-gap: 1rem;
+            grid-auto-rows: minmax(500px, auto);
+        }
+.wrapper > div{
+        background-color: #eee;
+        padding: 1rem;      
+}
+.wrapper >div:nth-child(odd){
+    background-color: #efc;
+}
+    </style>
+</head>
+<body>
+       <div class="wrapper">
+           <div>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse similique ducimus quidem non rem deserunt voluptatum alias ut quae suscipit.</p>
+           </div>
+           <div>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, soluta.</p>
+           </div>
+           <div>
+               <p>Lorrga,ukwg,kaiughkebghi,HGk,EBgKGHiuhgkwgnjmwghwigeyohgkrgkhkzkabore eum.</p>
+            </div>
+           <div>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto blanditiis perferendis repellendus aliquam quas! Non esse aliquid voluptatum dicta! Sequi dolores odit ea consequuntur veritatis cum, beatae dicta eveniet perferendis!8</p>
+           </div>          
+       </div>
+</body>
+</html>

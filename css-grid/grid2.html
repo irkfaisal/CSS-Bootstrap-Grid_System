@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid css</title>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 1fr 4fr 1fr;
+            grid-gap: 1rem;
+            grid-auto-rows: minmax(400px, auto);
+        }
+                .wrapper>div {
+            background-color: #eee;
+            padding: 1rem;
+        }
+
+        .wrapper>div:nth-child(odd) {
+            background-color: #efc;
+        }
+        .nested{
+            display: grid;
+            grid-template-columns: repeat(3, 2fr);
+            grid-gap: 1rem;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, minus? ufudydtsjyzysrddfdydjtsrtsxgtd</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, minus?</p>
+            <div class="nested">
+                <div><p>Lorem ipsum dolor sit amet consectetur.</p></div>
+                <div><p>Lorem ipsum dolor sit amet consectetur.</p></div>
+                <div><p>Lorem ipsum dolor sit amet consectetur.</p></div>
+                <div><p>Lorem ipsum dolor sit amet consectetur.</p></div>
+                <div><p>Lorem ipsum dolor sit amet consectetur.</p></div>
+                <div><p>Lorem ipsum dolor sit amet consectetur.</p></div>
+            </div>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, minus?</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, minus?</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, minus?</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, minus?</p>
+        </div>
+    </div>
+</body>
+
+</html>
