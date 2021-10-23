@@ -1,0 +1,224 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- <link rel="stylesheet" href="D:\github questions\practice\practice/bootstrapGrid.css"> -->
+  <title>BootstrapGrid</title>
+  <style>
+    *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* .first-row{
+ ;
+} */
+.first-row-first-col{
+    background-color: #FF6B6B;
+    height: 50%;
+}
+.first-row-second-col{
+    background-color: #3D087B;  
+    height: 50%;
+}
+ .second-row-1{
+   background-color: black;
+   height: 10%;
+}
+.second-row-2{
+   background-color: #FFE459;
+   height: 10%;
+}
+.second-row-3{
+   background-color: #FFDEDE;
+   height: 10%;
+}
+.second-row-4{
+   background-color: #7FC8A9;
+   height: 10%;
+}
+.third-row-1{background-color: #CDBBA7; height: 40%;}
+.third-row-2{background-color: #C400FF; height: 40%;}
+.third-row-3{background-color: #BD1616; height: 40%;}
+.third-row-4{background-color: #F5FDB0; height: 40%;}
+.third-row-5{background-color: #753422; height: 40%;}
+.third-row-6{background-color: #D9DD6B; height: 40%;}
+
+.third-row-1-row-1{
+    background-color: coral; height: 33.3%;
+}
+.third-row-1-row-2{
+    background-color: crimson; height:33.3%;
+}
+.third-row-1-row-3{
+    background-color: forestgreen; height: 33.3%;
+}
+.third-row-2-row-1{ background-color: #7579E7; height:50%}
+.third-row-2-row-2{ background-color: #9AB3F5; height:50%}
+
+.forth-row{
+  border: 10px solid #FF5200;
+}
+
+.forth-row-1{ background-color: #0CECDD; height: 10%;}
+.forth-row-2{ background-color: #FFF338; height: 10%;}
+.forth-row-3{ background-color: #FF67E7; height: 10%;}
+.forth-row-4{ background-color: #C400FF; height: 10%;}
+.forth-row-5{ background-color: #21209C; height: 10%;}
+.forth-row-6{ background-color: #FB3640; height: 10%;}
+
+.fifth-row{
+  border: 20px solid #51EAEA;
+  min-height: 50%;
+}
+.fifth-row-col-1{
+  border: 10px solid #FFF338;
+  height: 50%;
+}
+.fifth-row-col-2{
+  border: 10px solid #FFF338;
+  height: 50%;
+}
+.fifth-row-col-1-row-1{ background-color: #CF0000; height: 100%;}
+.fifth-row-col-1-row-2{ background-color: #FF79CD; height: 100%;}
+.fifth-row-col-1-row-3{ background-color: #52734D; height: 100%;}
+.fifth-row-col-1-row-4{ background-color: #7868E6; height: 100%;}
+.fifth-row-col-1-row-5{ background-color: #4D375D; height: 100%;}
+.fifth-row-col-1-row-6{ background-color: #54E346; height: 100%;}
+.fifth-row-col-1-row-7{ background-color: #CF0000; height: 100%;}
+.fifth-row-col-1-row-8{ background-color: #FF79CD; height: 100%;}
+.fifth-row-col-1-row-9{ background-color: #52734D; height: 100%;}
+.fifth-row-col-1-row-10{ background-color: #7868E6; height: 100%;}
+.fifth-row-col-1-row-11{ background-color: #4D375D; height: 100%;}
+.fifth-row-col-1-row-12{ background-color: #54E346; height: 100%;}
+
+.fifth-row-col-2-row-1{ background-color: #4D375D; height:16.6%;}
+.fifth-row-col-2-row-2{ background-color: #E5EDC4; height:16.6%;}
+.fifth-row-col-2-row-3{ background-color: #F0BEBE; height:16.6%;}
+.fifth-row-col-2-row-4{ background-color: #E1A6E1; height:16.6%;}
+.fifth-row-col-2-row-5{ background-color: #8E2657; height:16.6%;}
+.fifth-row-col-2-row-6{ background-color: #11052C; height:16.6%;}
+
+.fifth-row-col-2-row-2-col-1{
+  background-color: #0CECDD; height: 100%;
+}
+.fifth-row-col-2-row-2-col-2{
+  background-color: #df1c1c; height: 100%;
+}
+.fifth-row-col-2-row-2-col-3{
+  background-color: #7868E6; height: 100%;
+}
+.fifth-row-col-2-row-2-col-4{
+  background-color: #ddec0c; height: 100%;
+}
+.fifth-row-col-2-row-2-col-5{
+  background-color: #ff3d02; height: 100%;
+}
+.fifth-row-col-2-row-2-col-6{
+  background-color: #0515ff; height: 100%;
+}
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row first-row">
+      <div class="col-md-6 col-xs-12 first-row-first-col"></div>
+      <div class="col-md-6 col-xs-12 first-row-second-col"></div>
+    </div>
+    <div class="row second-row">
+        <div class="col-md-3 col-xs-12 second-row-1"></div>
+        <div class="col-md-3 col-xs-12 second-row-2"></div>
+        <div class="col-md-3 col-xs-12 second-row-3"></div>
+        <div class="col-md-3 col-xs-12 second-row-4"></div>
+    </div>
+    <div class="row third-row">
+        <div class="col-md-2 col-xs-12 third-row-1">
+          <div class="container-fluid">
+            <div class="row third-row-1-row-1"></div>
+            <div class="row third-row-1-row-2"></div>
+            <div class="row third-row-1-row-3"></div>
+          </div>
+        </div>
+        <div class="col-md-2 col-xs-12 third-row-2">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="row third-row-2-row-1"></div>
+                <div class="row third-row-2-row-2"></div>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-2 col-xs-12 third-row-3"></div>
+        <div class="col-md-2 col-xs-12 third-row-4"></div>
+        <div class="col-md-2 col-xs-12 third-row-5"></div>
+        <div class="col-md-2 col-xs-12 third-row-6"></div>
+    </div>
+    <div class="row forth-row">
+      <div class="container-fluid">
+        <div class="row forth-row-1"></div>
+        <div class="row forth-row-2"></div>
+        <div class="row forth-row-3"></div>
+        <div class="row forth-row-4"></div>
+        <div class="row forth-row-5"></div>
+        <div class="row forth-row-6"></div>
+        <div class="row forth-row-7"></div>
+      </div>
+    </div>
+    <div class="row fifth-row">
+      <div class="col-md-6 col-xs-12 fifth-row-col-1">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-1 col-xs-12 fifth-row-col-1-row-1"></div>
+              <div class="col-md-1 col-xs-12 fifth-row-col-1-row-2"></div>
+              <div class="col-md-1 col-xs-12 fifth-row-col-1-row-3"></div>
+              <div class="col-md-1 col-xs-12 fifth-row-col-1-row-4"></div>
+              <div class="col-md-1 col-xs-12 fifth-row-col-1-row-5"></div>
+              <div class="col-md-1 col-xs-12 fifth-row-col-1-row-6"></div>
+              <div class="col-md-1 col-xs-12 fifth-row-col-1-row-7"></div>
+              <div class="col-md-1 col-xs-12 fifth-row-col-1-row-8"></div>
+              <div class="col-md-1 col-xs-12 fifth-row-col-1-row-9"></div>
+              <div class="col-md-1 col-xs-12 fifth-row-col-1-row-10"></div>
+              <div class="col-md-1 col-xs-12 fifth-row-col-1-row-11"></div>
+              <div class="col-md-1 col-xs-12 fifth-row-col-1-row-12"></div>
+            </div>
+
+          </div>
+      </div>
+      <div class="col-md-6 col-xs-12 fifth-row-col-2">
+          <div class="row fifth-row-col-2-row-1"></div>
+          <div class="row fifth-row-col-2-row-2">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-2 col-xs-12 fifth-row-col-2-row-2-col-1"></div>
+                <div class="col-md-2 col-xs-12 fifth-row-col-2-row-2-col-2"></div>
+                <div class="col-md-2 col-xs-12 fifth-row-col-2-row-2-col-3"></div>
+                <div class="col-md-2 col-xs-12 fifth-row-col-2-row-2-col-4"></div>
+                <div class="col-md-2 col-xs-12 fifth-row-col-2-row-2-col-5"></div>
+                <div class="col-md-2 col-xs-12 fifth-row-col-2-row-2-col-6"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row fifth-row-col-2-row-3"></div>
+          <div class="row fifth-row-col-2-row-4"></div>
+          <div class="row fifth-row-col-2-row-5"></div>
+          <div class="row fifth-row-col-2-row-6"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

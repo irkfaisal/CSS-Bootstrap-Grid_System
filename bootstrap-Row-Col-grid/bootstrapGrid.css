@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* .first-row{
+
+} */
+.first-row-first-col{
+    background-color: #FF6B6B;
+}
+.first-row-second-col{
+    background-color: #3D087B;   
+}
